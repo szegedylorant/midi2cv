@@ -1736,7 +1736,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C191023"
+		(property "LCSC" "C191023"
+			(at 53.34 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 53.34 43.18 0)
 			(effects
 				(font
@@ -1815,7 +1824,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C6961"
+		(property "LCSC" "C6961"
+			(at 118.11 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 118.11 49.53 0)
 			(effects
 				(font
@@ -1911,7 +1929,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C15850"
+		(property "LCSC" "C15850"
+			(at 66.04 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 66.04 52.07 0)
 			(effects
 				(font
@@ -1990,7 +2017,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C14663"
+			(at 142.24 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 142.24 53.34 0)
 			(effects
 				(font
@@ -2061,6 +2097,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 43.18 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
 			(at 43.18 43.18 0)
 			(effects
 				(font
@@ -2163,7 +2208,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C14663"
+			(at 88.9 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 88.9 48.26 0)
 			(effects
 				(font
@@ -2242,7 +2296,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C6961"
+		(property "LCSC" "C6961"
+			(at 135.89 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 135.89 49.53 0)
 			(effects
 				(font
@@ -2339,7 +2402,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C14663"
+			(at 142.24 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 142.24 45.72 0)
 			(effects
 				(font
@@ -2417,7 +2489,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C15850"
+		(property "LCSC" "C15850"
+			(at 66.04 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 66.04 44.45 0)
 			(effects
 				(font
@@ -2496,7 +2577,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C14663"
+			(at 123.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 123.19 53.34 0)
 			(effects
 				(font
@@ -2575,7 +2665,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C14663"
+			(at 123.19 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 123.19 45.72 0)
 			(effects
 				(font
@@ -2651,7 +2750,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C191023"
+		(property "LCSC" "C191023"
+			(at 53.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 53.34 53.34 0)
 			(effects
 				(font
@@ -2729,7 +2837,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C15850"
+		(property "LCSC" "C15850"
+			(at 106.68 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 106.68 48.26 0)
 			(effects
 				(font

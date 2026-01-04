@@ -3301,7 +3301,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C23162"
+			(at 165.1 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 165.1 120.65 0)
 			(effects
 				(font
@@ -3381,7 +3390,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 58.42 104.14 0)
 			(effects
 				(font
@@ -3544,6 +3553,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 260.35 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "midi2cv"
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
@@ -3600,6 +3618,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 237.49 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
 			(at 237.49 34.29 0)
 			(effects
 				(font
@@ -3672,7 +3699,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C1589"
+			(at 73.66 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 73.66 50.8 0)
 			(effects
 				(font
@@ -3741,6 +3777,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 231.14 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
 			(at 231.14 101.6 0)
 			(effects
 				(font
@@ -3837,6 +3882,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 256.54 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "midi2cv"
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
@@ -3893,6 +3947,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 260.35 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
 			(at 260.35 43.18 0)
 			(effects
 				(font
@@ -3963,7 +4026,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C21190"
+			(at 171.45 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 171.45 101.6 90)
 			(effects
 				(font
@@ -4040,7 +4112,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C21190"
+			(at 171.45 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 171.45 67.31 90)
 			(effects
 				(font
@@ -4119,6 +4200,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 262.89 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "midi2cv"
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
@@ -4181,7 +4271,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 67.31 44.45 90)
 			(effects
 				(font
@@ -4263,6 +4353,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 262.89 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "midi2cv"
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
@@ -4319,6 +4418,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 262.89 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
 			(at 262.89 55.88 0)
 			(effects
 				(font
@@ -4391,6 +4499,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 256.54 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "midi2cv"
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
@@ -4453,7 +4570,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C21190"
+			(at 171.45 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 171.45 38.1 90)
 			(effects
 				(font
@@ -4532,6 +4658,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 262.89 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "midi2cv"
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
@@ -4588,6 +4723,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 262.89 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
 			(at 262.89 25.4 0)
 			(effects
 				(font
@@ -4669,7 +4813,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 163.83 72.39 90)
 			(effects
 				(font
@@ -4745,7 +4889,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 182.88 67.31 0)
 			(effects
 				(font
@@ -4825,7 +4969,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C22775"
+			(at 55.88 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 55.88 44.45 90)
 			(effects
 				(font
@@ -4904,7 +5057,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C23162"
+			(at 163.83 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 163.83 81.28 0)
 			(effects
 				(font
@@ -4983,6 +5145,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 256.54 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project ""
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
@@ -5045,7 +5216,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 182.88 101.6 0)
 			(effects
 				(font
@@ -5136,7 +5307,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 165.1 110.49 90)
 			(effects
 				(font
@@ -5212,7 +5383,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 182.88 38.1 0)
 			(effects
 				(font
@@ -5286,6 +5457,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 256.54 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
 			(at 256.54 62.23 0)
 			(effects
 				(font

@@ -1845,7 +1845,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C25804"
+			(at 120.65 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 120.65 43.18 0)
 			(effects
 				(font
@@ -1922,7 +1931,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C22962"
+			(at 81.28 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 81.28 116.84 90)
 			(effects
 				(font
@@ -2000,7 +2018,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 106.68 119.38 0)
 			(effects
 				(font
@@ -2099,7 +2117,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C2128"
+		(property "LCSC" "C2128"
+			(at 86.36 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 86.36 49.53 90)
 			(effects
 				(font
@@ -2176,7 +2203,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C6961"
+		(property "LCSC" "C6961"
+			(at 69.85 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 69.85 119.38 0)
 			(effects
 				(font
@@ -2274,7 +2310,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 60.96 48.26 0)
 			(effects
 				(font
@@ -2356,7 +2392,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" "C15825"
+		(property "LCSC" "C15825"
+			(at 100.33 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 100.33 48.26 0)
 			(effects
 				(font
@@ -2451,7 +2496,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C22962"
+			(at 76.2 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 76.2 45.72 90)
 			(effects
 				(font
@@ -2528,7 +2582,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC PN" ""
+		(property "LCSC" "C22962"
+			(at 81.28 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
 			(at 81.28 119.38 90)
 			(effects
 				(font
