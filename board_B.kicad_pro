@@ -296,123 +296,7 @@
     "netclass_patterns": [
       {
         "netclass": "Default",
-        "pattern": "B_GND"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J7-PadT)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B_-12V"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "SLEW_OUT"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "CC"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(A1-D12-Pad15)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(A1-D8-Pad11)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(U1-NC-Pad4)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D6-K)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U3A-+)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U4A-+)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D5-K)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J7-PadR)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B_+5V"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "EXP7"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J4-PadT)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(J4-PadTN)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "GATE"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "B_+12V"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J5-PadT)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "SLEW_IN"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(A1-D13-Pad16)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(U1-EN-Pad7)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "EXP5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(D1-K)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(A1-A5-Pad24)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(A1-D4-Pad7)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "CLOCK"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(R3-Pad2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "+12V"
+        "pattern": "unconnected-(A1-D2-Pad5)"
       },
       {
         "netclass": "Default",
@@ -420,107 +304,23 @@
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(A1-~{RESET}-Pad28)"
+        "pattern": "Net-(D1-K)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(U3A--)"
+        "pattern": "B_+5V"
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(A1-D7-Pad10)"
+        "pattern": "Net-(J1-PadR)"
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(J3-PadTN)"
+        "pattern": "Net-(R3-Pad2)"
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(A1-A3-Pad22)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U3B-+)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "CLOCK2"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U4A--)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(C7-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J1-PadT)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(R18-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U3B--)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(C13-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(JP1-C)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "MIDI_IN"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(U1-NC-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "EXP1"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(A1-A4-Pad23)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U4B--)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(A1-A1-Pad20)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(A1-A6-Pad25)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(J8-PadTN)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(C11-Pad1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(A1-A0-Pad19)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(A1-D2-Pad5)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(R25-Pad1)"
+        "pattern": "EXP5"
       },
       {
         "netclass": "Default",
@@ -528,11 +328,115 @@
       },
       {
         "netclass": "Default",
+        "pattern": "Net-(C13-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-A4-Pad23)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-A3-Pad22)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "B_+12V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q1-C)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "SLEW_IN"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(J4-PadTN)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-A2-Pad21)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D6-K)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-A0-Pad19)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(J8-PadTN)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "EXP3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C7-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J7-PadT)"
+      },
+      {
+        "netclass": "Default",
         "pattern": "unconnected-(A1-3V3-Pad17)"
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(A1-AREF-Pad18)"
+        "pattern": "unconnected-(A1-~{RESET}-Pad28)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(J3-PadTN)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U4A--)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "EXP1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R18-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-~{RESET}-Pad3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U4A-+)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J5-PadT)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "CC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J4-PadT)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U3A-+)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q1-B)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-D4-Pad7)"
       },
       {
         "netclass": "Default",
@@ -540,11 +444,11 @@
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J3-PadT)"
+        "pattern": "Net-(C11-Pad1)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(D1-A)"
+        "pattern": "MIDI_IN"
       },
       {
         "netclass": "Default",
@@ -552,7 +456,31 @@
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(J5-PadTN)"
+        "pattern": "EXP7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-D12-Pad15)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "B_-12V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "CLOCK"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(J1-PadS)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "SLEW_OUT"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-A7-Pad26)"
       },
       {
         "netclass": "Default",
@@ -564,11 +492,87 @@
       },
       {
         "netclass": "Default",
-        "pattern": "EXP3"
+        "pattern": "unconnected-(A1-A1-Pad20)"
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(A1-~{RESET}-Pad3)"
+        "pattern": "unconnected-(J5-PadTN)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U3B--)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(JP1-C)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(Q2-B)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-A6-Pad25)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J3-PadT)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U4B-+)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-AREF-Pad18)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D5-K)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "B_GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-D1{slash}TX-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "CLOCK2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "+12V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R25-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U3A--)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J7-PadR)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1-A)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(A1-D13-Pad16)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U3B-+)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GATE"
       }
     ]
   },

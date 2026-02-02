@@ -4,6 +4,9 @@
 	(generator_version "9.0")
 	(uuid "dc24635f-92c0-45e1-9dcb-753bde3bb041")
 	(paper "A4")
+	(title_block
+		(rev "3")
+	)
 	(lib_symbols
 		(symbol "Connector_Audio:AudioJack2_SwitchT"
 			(exclude_from_sim no)
@@ -724,145 +727,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -1170,7 +1034,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Potentiometer"
+		(symbol "Diode:1N5819WS"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1178,23 +1045,32 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R_Potentiometer"
-				(at -2.54 0 90)
+			(property "Value" "1N5819WS"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Diode_SMD:D_SOD-323"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1203,7 +1079,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1212,7 +1088,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Potentiometer"
+			(property "ki_keywords" "diode Schottky"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1221,7 +1097,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "resistor variable"
+			(property "ki_fp_filters" "D*SOD?323*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1230,19 +1106,11 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "1N5819WS_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Potentiometer_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1253,19 +1121,19 @@
 				)
 				(polyline
 					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy 2.54 0) (xy 1.524 0)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -1276,11 +1144,11 @@
 					)
 				)
 			)
-			(symbol "R_Potentiometer_1_1"
+			(symbol "1N5819WS_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1296,27 +1164,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1960,16 +1810,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Slew"
-		(exclude_from_sim no)
-		(at 30.48 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1fd40205-7edd-4415-841f-3e1f7afb7d05")
-	)
 	(text "Clock Out"
 		(exclude_from_sim no)
 		(at 140.462 50.8 0)
@@ -2031,16 +1871,10 @@
 		(uuid "cd1a8418-1a11-496c-9ddb-65ea15021009")
 	)
 	(junction
-		(at 167.64 67.31)
+		(at 152.4 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "345e90f5-5a75-409f-9db2-619bee927187")
-	)
-	(junction
-		(at 73.66 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4c75ad2f-d6f2-456c-b7ca-2c7d6c55098b")
+		(uuid "1ace2b48-6a2f-4fe0-9bf7-2f56c732ee50")
 	)
 	(junction
 		(at 163.83 67.31)
@@ -2049,16 +1883,26 @@
 		(uuid "7ef9302d-fea2-4fab-a10a-5146b905db5d")
 	)
 	(junction
-		(at 71.12 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "824b2422-0dc3-41ef-8e1e-8b8a8198af45")
-	)
-	(junction
 		(at 165.1 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "90568de9-06a5-48a2-a167-731602a4efcb")
+	)
+	(junction
+		(at 161.29 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99037b8d-56ed-45a4-8642-86e989076474")
+	)
+	(junction
+		(at 152.4 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d50fea96-d4a3-43e7-a265-1c11e1d16646")
+	)
+	(no_connect
+		(at 45.72 86.36)
+		(uuid "0a76069d-e8ea-4e12-9b91-095b26e7098f")
 	)
 	(no_connect
 		(at 45.72 104.14)
@@ -2077,6 +1921,10 @@
 		(uuid "56559b09-c10d-4d49-8c7e-dbb8c7229809")
 	)
 	(no_connect
+		(at 71.12 116.84)
+		(uuid "5a9309e2-2e11-45f2-a1ad-ffe5eebd9c52")
+	)
+	(no_connect
 		(at 71.12 86.36)
 		(uuid "5f570379-4ea6-4532-9aff-b51933f615a2")
 	)
@@ -2093,20 +1941,16 @@
 		(uuid "88e8702f-bf87-4238-a659-34c1382acb03")
 	)
 	(no_connect
+		(at 45.72 99.06)
+		(uuid "9182e2e3-d7cb-4b63-a554-99173df6ab3c")
+	)
+	(no_connect
 		(at 45.72 96.52)
 		(uuid "92a50698-4f51-4802-a95e-b434d432811a")
 	)
 	(no_connect
-		(at 71.12 101.6)
-		(uuid "9406b0ea-0ccd-40a3-bbbd-ab6da6766403")
-	)
-	(no_connect
 		(at 71.12 109.22)
 		(uuid "9877447c-a130-497f-b46e-b582883f9983")
-	)
-	(no_connect
-		(at 45.72 91.44)
-		(uuid "a91605e0-bf98-4de6-9cbe-c68b5a08e7ad")
 	)
 	(no_connect
 		(at 45.72 88.9)
@@ -2125,10 +1969,6 @@
 		(uuid "cfc174d4-b817-402f-a649-94f1281a3ec1")
 	)
 	(no_connect
-		(at 71.12 99.06)
-		(uuid "d41b83ea-695f-4914-be2f-01320186c292")
-	)
-	(no_connect
 		(at 177.8 99.06)
 		(uuid "e2ef5228-4948-4645-93f3-fe9ed6f4e55f")
 	)
@@ -2138,13 +1978,13 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 44.45) (xy 78.74 44.45)
+			(xy 163.83 67.31) (xy 167.64 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "173a2ff0-18f1-416e-9b62-1962b4658c88")
+		(uuid "17a11bf1-a698-428d-bb6f-e14f1d86ef88")
 	)
 	(wire
 		(pts
@@ -2158,36 +1998,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 44.45) (xy 52.07 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e09362b-3db9-4db5-b187-8d1f5b214452")
-	)
-	(wire
-		(pts
-			(xy 67.31 40.64) (xy 71.12 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "271a4bb6-e411-43de-a34d-bee2a8b2b6d2")
-	)
-	(wire
-		(pts
-			(xy 167.64 67.31) (xy 168.91 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36c95267-1e59-4195-95cd-9fa4504bb826")
-	)
-	(wire
-		(pts
 			(xy 163.83 87.63) (xy 163.83 85.09)
 		)
 		(stroke
@@ -2198,23 +2008,13 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 40.64) (xy 71.12 44.45)
+			(xy 153.67 39.37) (xy 153.67 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3f63ef84-2be7-43f6-8ba4-d615e23784fe")
-	)
-	(wire
-		(pts
-			(xy 163.83 67.31) (xy 167.64 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46766a23-5b7d-48cc-b09d-12fc887ca7c5")
+		(uuid "4b009525-b20b-42f0-b540-af231db1127c")
 	)
 	(wire
 		(pts
@@ -2228,7 +2028,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 101.6) (xy 165.1 101.6)
+			(xy 152.4 101.6) (xy 165.1 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2268,6 +2068,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 101.6) (xy 152.4 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6aa89671-9dec-4f41-942a-eff293cb4068")
+	)
+	(wire
+		(pts
 			(xy 55.88 78.74) (xy 58.42 78.74)
 		)
 		(stroke
@@ -2275,16 +2085,6 @@
 			(type default)
 		)
 		(uuid "79093db7-6f52-4270-bcb7-e019765eec96")
-	)
-	(wire
-		(pts
-			(xy 73.66 44.45) (xy 71.12 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80f1e7b1-073f-4ea6-bb42-22ac90e9883c")
 	)
 	(wire
 		(pts
@@ -2298,23 +2098,13 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 44.45) (xy 73.66 46.99)
+			(xy 153.67 38.1) (xy 161.29 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "89b1d06f-87a9-401c-8386-8ee3386b9278")
-	)
-	(wire
-		(pts
-			(xy 162.56 67.31) (xy 163.83 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ecfd69e-e553-458b-88b8-ea68e90244b6")
+		(uuid "8ac5106b-7123-4f35-853b-83ebb0bfc5bb")
 	)
 	(wire
 		(pts
@@ -2338,13 +2128,23 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 44.45) (xy 63.5 44.45)
+			(xy 152.4 67.31) (xy 163.83 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "de7f6484-aae4-409e-b441-c96a5c3b1d50")
+		(uuid "db5aa564-53bc-4ee4-855b-d47d35b2e4cf")
+	)
+	(wire
+		(pts
+			(xy 152.4 39.37) (xy 153.67 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de4ae020-e36e-4cf1-946e-89d9f8357b68")
 	)
 	(wire
 		(pts
@@ -2358,6 +2158,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 67.31) (xy 152.4 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2d5f746-9925-4452-b7bd-0768e94df2ce")
+	)
+	(wire
+		(pts
 			(xy 165.1 101.6) (xy 165.1 106.68)
 		)
 		(stroke
@@ -2365,6 +2175,28 @@
 			(type default)
 		)
 		(uuid "fb8f1879-44f3-4c40-8dca-1f5936b86980")
+	)
+	(global_label "B_GND"
+		(shape input)
+		(at 161.29 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "17c92a79-a869-4ea1-9ec5-7d1d2bebae4e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.1967 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "CC"
 		(shape input)
@@ -2410,24 +2242,46 @@
 			)
 		)
 	)
-	(global_label "MIDI_IN"
+	(global_label "B_+5V"
 		(shape input)
-		(at 45.72 99.06 180)
+		(at 152.4 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "2a57a0f4-d23a-4d92-ba2e-b8e8e5c30cc6")
+		(uuid "1d109313-f1e7-4842-9881-609cf4e212e9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.9009 99.06 0)
+			(at 161.4933 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B_+5V"
+		(shape input)
+		(at 152.4 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "220896ec-98d8-4374-8753-5183bdb4d7e2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.4933 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2500,7 +2354,7 @@
 	)
 	(global_label "GATE"
 		(shape input)
-		(at 160.02 101.6 180)
+		(at 142.24 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2510,7 +2364,7 @@
 		)
 		(uuid "34609a91-4fb5-4c8d-9e60-1940c5dea6f4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.5596 101.6 0)
+			(at 134.7796 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2542,6 +2396,50 @@
 			)
 		)
 	)
+	(global_label "GATE"
+		(shape input)
+		(at 45.72 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "49ee04da-eceb-4d5b-9b19-f177ec33d268")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.2596 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B_+5V"
+		(shape input)
+		(at 161.29 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "55c5791c-0f4a-4112-9b60-0190952a3422")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.3833 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C_GND"
 		(shape input)
 		(at 177.8 40.64 270)
@@ -2555,6 +2453,28 @@
 		(uuid "5c82bac8-5d99-4a90-abbc-3e248b245080")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 177.8 49.7333 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B_GND"
+		(shape input)
+		(at 152.4 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5dfd8fa5-6323-4939-a88e-23d0684fb318")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.3067 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2608,24 +2528,24 @@
 			)
 		)
 	)
-	(global_label "B_GND"
+	(global_label "CLOCK2"
 		(shape input)
-		(at 73.66 54.61 270)
+		(at 71.12 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "6a11bc93-d11d-43d4-97b5-9a4e70472cdf")
+		(uuid "6d08d4c2-c3dc-4fd9-9df1-39d815033ef4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.66 63.7033 90)
+			(at 81.4833 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2718,28 +2638,6 @@
 			)
 		)
 	)
-	(global_label "CLOCK2"
-		(shape input)
-		(at 71.12 119.38 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "85a50545-1158-4b16-bb81-e6b0f4d25294")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.4833 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "C_GND"
 		(shape input)
 		(at 177.8 69.85 270)
@@ -2764,7 +2662,7 @@
 	)
 	(global_label "CLOCK2"
 		(shape input)
-		(at 162.56 67.31 180)
+		(at 146.05 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2774,29 +2672,7 @@
 		)
 		(uuid "955d7f65-d09a-4e74-8fd6-cdd57e3630e0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.1967 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SLEW_IN"
-		(shape input)
-		(at 48.26 44.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9779b7bb-167d-415d-a399-3145906d7a46")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.5339 44.45 0)
+			(at 135.6867 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2824,28 +2700,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GATE"
-		(shape input)
-		(at 45.72 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9ac53373-70a2-45a8-9588-835b1fc5dea0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.2596 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -2960,28 +2814,6 @@
 			)
 		)
 	)
-	(global_label "SLEW_OUT"
-		(shape input)
-		(at 78.74 44.45 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ad16a057-8d64-4db0-b722-87f4dd19f6ff")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.1594 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "C_GND"
 		(shape input)
 		(at 165.1 127 0)
@@ -3006,7 +2838,7 @@
 	)
 	(global_label "CLOCK"
 		(shape input)
-		(at 161.29 38.1 180)
+		(at 152.4 39.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3016,7 +2848,7 @@
 		)
 		(uuid "bd2ae98f-dc2d-489c-bac9-29b1a264efad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.1362 38.1 0)
+			(at 143.2462 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3061,6 +2893,28 @@
 		(uuid "c0222be0-fc6d-4abe-8d3e-8b2fe7132949")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 268.1128 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CLOCK"
+		(shape input)
+		(at 71.12 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c44744d5-9dde-4f20-9346-78f0cd9d1720")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.2738 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3136,6 +2990,28 @@
 			)
 		)
 	)
+	(global_label "B_GND"
+		(shape input)
+		(at 152.4 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d6053127-9e47-42c2-acc7-d2eb435f4372")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 143.3067 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "EXP2"
 		(shape input)
 		(at 257.81 99.06 180)
@@ -3202,6 +3078,28 @@
 			)
 		)
 	)
+	(global_label "MIDI_IN"
+		(shape input)
+		(at 71.12 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eb2168cf-105e-403c-bf2a-0a3da840bf7c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.9391 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "EXP3"
 		(shape input)
 		(at 226.06 101.6 180)
@@ -3220,28 +3118,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CLOCK"
-		(shape input)
-		(at 71.12 116.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fefd70d9-da91-486e-b815-93d5fe42c7dd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.2738 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -3500,7 +3376,7 @@
 	)
 	(symbol
 		(lib_id "Custom:Mounting_Hole")
-		(at 260.35 48.26 0)
+		(at 260.35 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3509,7 +3385,7 @@
 		(fields_autoplaced yes)
 		(uuid "07d2076e-edcd-4fa2-b89a-aa5f1de7612a")
 		(property "Reference" "H10"
-			(at 262.89 46.9899 0)
+			(at 262.89 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3518,7 +3394,7 @@
 			)
 		)
 		(property "Value" "7mm"
-			(at 262.89 49.5299 0)
+			(at 262.89 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3527,7 +3403,7 @@
 			)
 		)
 		(property "Footprint" "Custom:DrillHole_D7.00"
-			(at 260.35 48.26 0)
+			(at 260.35 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3536,7 +3412,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 48.26 0)
+			(at 260.35 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3545,7 +3421,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 260.35 48.26 0)
+			(at 260.35 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3554,7 +3430,7 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" "1"
-			(at 260.35 48.26 0)
+			(at 260.35 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3566,6 +3442,92 @@
 			(project "midi2cv"
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
 					(reference "H10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 161.29 34.29 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a9b37e0-46ea-4c9a-93de-7adb807f5f9f")
+		(property "Reference" "D8"
+			(at 154.94 33.9725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 157.48 33.9725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 165.735 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 161.29 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 161.29 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 161.29 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
+			(at 161.29 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2365f25-c5da-4358-b5f2-5c4576ba64f5")
+		)
+		(pin "2"
+			(uuid "8c5f11eb-acf9-41ac-a9cf-83662c84a14f")
+		)
+		(instances
+			(project "midi2cv"
+				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -3639,94 +3601,6 @@
 			(project ""
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
 					(reference "B2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 73.66 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28f85b6f-d1be-4abc-8235-6a82651022e0")
-		(property "Reference" "C17"
-			(at 77.47 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10n"
-			(at 77.47 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 74.6252 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 73.66 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 73.66 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1589"
-			(at 73.66 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_IGNORE" ""
-			(at 73.66 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "aef6e93e-fff2-4802-9062-0462b13daff7")
-		)
-		(pin "1"
-			(uuid "bf949844-7a28-4b25-a240-efc4f0a5eda6")
-		)
-		(instances
-			(project ""
-				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
-					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -3829,16 +3703,16 @@
 	)
 	(symbol
 		(lib_id "Custom:Mounting_Hole")
-		(at 256.54 55.88 0)
+		(at 256.54 43.18 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "304d7257-500a-4d36-90eb-61c62d5ee1d1")
 		(property "Reference" "H8"
-			(at 259.08 54.6099 0)
+			(at 254 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3847,7 +3721,7 @@
 			)
 		)
 		(property "Value" "3mm"
-			(at 259.08 57.1499 0)
+			(at 254 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3856,7 +3730,7 @@
 			)
 		)
 		(property "Footprint" "Custom:DrillHole_D3.00"
-			(at 256.54 55.88 0)
+			(at 256.54 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3865,7 +3739,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 55.88 0)
+			(at 256.54 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3874,7 +3748,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 256.54 55.88 0)
+			(at 256.54 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3883,7 +3757,7 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" "1"
-			(at 256.54 55.88 0)
+			(at 256.54 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3901,6 +3775,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 152.4 97.79 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "32c1b1b9-aba9-4b35-823d-8bb36cba8b8f")
+		(property "Reference" "D4"
+			(at 146.05 97.4725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 148.59 97.4725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 156.845 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
+			(at 152.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39320270-763a-4bd5-832f-ecec16093281")
+		)
+		(pin "2"
+			(uuid "b4b6dc2a-e805-4263-afd9-73a48cf5a9f5")
+		)
+		(instances
+			(project "midi2cv"
+				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom:Front_Plate")
 		(at 260.35 43.18 0)
 		(unit 1)
@@ -3908,10 +3868,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "39e69a5e-e5a6-45fb-b233-47a071f45c2c")
 		(property "Reference" "B3"
-			(at 267.97 41.9099 0)
+			(at 258.572 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3920,7 +3879,7 @@
 			)
 		)
 		(property "Value" "Front_Plate"
-			(at 267.97 44.4499 0)
+			(at 254.762 16.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4146,8 +4105,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 152.4 105.41 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41229a0b-1334-4890-9ff4-b44fad3feb52")
+		(property "Reference" "D7"
+			(at 158.75 105.0925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 156.21 105.0925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 147.955 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 152.4 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 152.4 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 152.4 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
+			(at 152.4 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "401c181c-f041-4850-a7b2-acacb403dbd9")
+		)
+		(pin "2"
+			(uuid "281eb169-2326-45ad-a505-adb8bd2fcc7d")
+		)
+		(instances
+			(project "midi2cv"
+				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom:Mounting_Hole")
-		(at 262.89 36.83 0)
+		(at 264.16 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4156,7 +4200,7 @@
 		(fields_autoplaced yes)
 		(uuid "438bc198-cfe7-47ac-9c2b-3a612ac3b8b1")
 		(property "Reference" "H9"
-			(at 265.43 35.5599 0)
+			(at 266.7 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4165,7 +4209,7 @@
 			)
 		)
 		(property "Value" "3mm"
-			(at 265.43 38.0999 0)
+			(at 266.7 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4174,7 +4218,7 @@
 			)
 		)
 		(property "Footprint" "Custom:DrillHole_D3.00"
-			(at 262.89 36.83 0)
+			(at 264.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4183,7 +4227,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 36.83 0)
+			(at 264.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4192,7 +4236,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 262.89 36.83 0)
+			(at 264.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4201,7 +4245,7 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" "1"
-			(at 262.89 36.83 0)
+			(at 264.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4219,88 +4263,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
-		(at 67.31 44.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48c70242-7999-414f-8765-41cbf221b7b5")
-		(property "Reference" "RV5"
-			(at 67.31 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "A100k"
-			(at 67.31 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EuroRackTools:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
-			(at 67.31 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Potentiometer"
-			(at 67.31 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_IGNORE" "1"
-			(at 67.31 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "315906df-ae47-4e02-bb99-b2bc068f96a5")
-		)
-		(pin "3"
-			(uuid "e2847075-e566-4857-a42b-59d43100551b")
-		)
-		(pin "2"
-			(uuid "3ea9a150-9dec-4f68-ab12-447b4134b31f")
-		)
-		(instances
-			(project ""
-				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
-					(reference "RV5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Custom:Mounting_Hole")
-		(at 262.89 62.23 0)
+		(at 264.16 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4309,7 +4273,7 @@
 		(fields_autoplaced yes)
 		(uuid "58c6f443-ae81-483e-8415-ed8558ea3991")
 		(property "Reference" "H7"
-			(at 265.43 60.9599 0)
+			(at 266.7 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4318,7 +4282,7 @@
 			)
 		)
 		(property "Value" "6mm"
-			(at 265.43 63.4999 0)
+			(at 266.7 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4327,7 +4291,7 @@
 			)
 		)
 		(property "Footprint" "Custom:DrillHole_D6.00"
-			(at 262.89 62.23 0)
+			(at 264.16 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4336,7 +4300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 62.23 0)
+			(at 264.16 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4345,7 +4309,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 262.89 62.23 0)
+			(at 264.16 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4354,7 +4318,7 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" "1"
-			(at 262.89 62.23 0)
+			(at 264.16 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4373,7 +4337,7 @@
 	)
 	(symbol
 		(lib_id "Custom:Mounting_Hole")
-		(at 262.89 55.88 0)
+		(at 260.35 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4382,7 +4346,7 @@
 		(fields_autoplaced yes)
 		(uuid "7067ae06-7f65-4d8a-8a73-95317fbb4417")
 		(property "Reference" "H5"
-			(at 265.43 54.6099 0)
+			(at 262.89 54.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4391,7 +4355,7 @@
 			)
 		)
 		(property "Value" "6mm"
-			(at 265.43 57.1499 0)
+			(at 262.89 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4400,7 +4364,7 @@
 			)
 		)
 		(property "Footprint" "Custom:DrillHole_D6.00"
-			(at 262.89 55.88 0)
+			(at 260.35 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4409,7 +4373,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 55.88 0)
+			(at 260.35 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4418,7 +4382,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 262.89 55.88 0)
+			(at 260.35 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4427,7 +4391,7 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" "1"
-			(at 262.89 55.88 0)
+			(at 260.35 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4447,15 +4411,15 @@
 	(symbol
 		(lib_id "Custom:Mounting_Hole")
 		(at 256.54 31.75 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "78a05d9c-acde-4a14-beea-accd682e2695")
 		(property "Reference" "H3"
-			(at 259.08 30.4799 0)
+			(at 254 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4464,7 +4428,7 @@
 			)
 		)
 		(property "Value" "6mm"
-			(at 259.08 33.0199 0)
+			(at 254 33.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,7 +4569,7 @@
 	)
 	(symbol
 		(lib_id "Custom:Mounting_Hole")
-		(at 262.89 31.75 0)
+		(at 264.16 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4614,7 +4578,7 @@
 		(fields_autoplaced yes)
 		(uuid "87dbbd1f-6c4d-4519-9c1d-6d8043e9d493")
 		(property "Reference" "H4"
-			(at 265.43 30.4799 0)
+			(at 266.7 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4623,7 +4587,7 @@
 			)
 		)
 		(property "Value" "6mm"
-			(at 265.43 33.0199 0)
+			(at 266.7 33.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4632,7 +4596,7 @@
 			)
 		)
 		(property "Footprint" "Custom:DrillHole_D6.00"
-			(at 262.89 31.75 0)
+			(at 264.16 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4641,7 +4605,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 31.75 0)
+			(at 264.16 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4650,7 +4614,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 262.89 31.75 0)
+			(at 264.16 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4659,7 +4623,7 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" "1"
-			(at 262.89 31.75 0)
+			(at 264.16 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4678,7 +4642,7 @@
 	)
 	(symbol
 		(lib_id "Custom:Mounting_Hole")
-		(at 262.89 25.4 0)
+		(at 264.16 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4687,7 +4651,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c79967c-fa82-4096-83c7-5c3f1ecc9217")
 		(property "Reference" "H2"
-			(at 265.43 24.1299 0)
+			(at 266.7 24.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4696,7 +4660,7 @@
 			)
 		)
 		(property "Value" "6mm"
-			(at 265.43 26.6699 0)
+			(at 266.7 26.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4705,7 +4669,7 @@
 			)
 		)
 		(property "Footprint" "Custom:DrillHole_D6.00"
-			(at 262.89 25.4 0)
+			(at 264.16 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4714,7 +4678,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 25.4 0)
+			(at 264.16 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4723,7 +4687,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 262.89 25.4 0)
+			(at 264.16 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4732,7 +4696,7 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" "1"
-			(at 262.89 25.4 0)
+			(at 264.16 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4917,42 +4881,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 55.88 44.45 270)
+		(lib_id "Diode:1N5819WS")
+		(at 152.4 63.5 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "acbafbb0-286d-4d09-8085-1998d554598b")
-		(property "Reference" "R18"
-			(at 55.88 38.1 90)
+		(uuid "bff12f4d-82ca-4138-9c43-9a73917b4304")
+		(property "Reference" "D10"
+			(at 146.05 63.1825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100"
-			(at 55.88 40.64 90)
+		(property "Value" "1N5819WS"
+			(at 148.59 63.1825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 55.88 42.672 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 44.45 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 156.845 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4960,8 +4915,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 55.88 44.45 0)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 152.4 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4969,8 +4924,17 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22775"
-			(at 55.88 44.45 90)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 152.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 152.4 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4979,7 +4943,7 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" ""
-			(at 55.88 44.45 90)
+			(at 152.4 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4988,15 +4952,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "d543e6ae-44d7-46eb-b977-880d9faca915")
+			(uuid "639330f1-63c9-4efe-8e63-86d5a48667af")
 		)
 		(pin "2"
-			(uuid "62421a47-5b62-4b02-b311-66b5a9cdd264")
+			(uuid "f6d25db1-2582-4bb2-9703-7d66aa34e81e")
 		)
 		(instances
 			(project "midi2cv"
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
-					(reference "R18")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -5093,15 +5057,15 @@
 	(symbol
 		(lib_id "Custom:Mounting_Hole")
 		(at 256.54 25.4 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d54f895e-91eb-4d7d-b0ba-8a7cd45d88aa")
 		(property "Reference" "H1"
-			(at 259.08 24.1299 0)
+			(at 254 24.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5110,7 +5074,7 @@
 			)
 		)
 		(property "Value" "6mm"
-			(at 259.08 26.6699 0)
+			(at 254 26.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5158,6 +5122,91 @@
 			(project ""
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 161.29 41.91 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d8137874-8a8e-4d88-95ea-973af9f5360f")
+		(property "Reference" "D9"
+			(at 167.64 41.5925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 165.1 41.5925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 156.845 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dce62ce3-1f2b-49f7-8776-c2b8e69b9747")
+		)
+		(pin "2"
+			(uuid "3c1d586f-74aa-4978-86f2-181974dfdc5f")
+		)
+		(instances
+			(project "midi2cv"
+				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -5412,16 +5461,16 @@
 	)
 	(symbol
 		(lib_id "Custom:Mounting_Hole")
-		(at 256.54 62.23 0)
+		(at 256.54 60.96 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ed5971ee-c30a-4283-ab92-5b4754d190c5")
 		(property "Reference" "H6"
-			(at 259.08 60.9599 0)
+			(at 254 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +5479,7 @@
 			)
 		)
 		(property "Value" "6mm"
-			(at 259.08 63.4999 0)
+			(at 254 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5439,7 +5488,7 @@
 			)
 		)
 		(property "Footprint" "Custom:DrillHole_D6.00"
-			(at 256.54 62.23 0)
+			(at 256.54 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5448,7 +5497,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 62.23 0)
+			(at 256.54 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5457,7 +5506,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 256.54 62.23 0)
+			(at 256.54 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5466,7 +5515,7 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" "1"
-			(at 256.54 62.23 0)
+			(at 256.54 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5478,6 +5527,91 @@
 			(project "midi2cv"
 				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
 					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819WS")
+		(at 152.4 71.12 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f36a4e1c-a8e7-434f-a12f-49ca9e079696")
+		(property "Reference" "D11"
+			(at 158.75 70.8025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 156.21 70.8025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 147.955 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 152.4 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 152.4 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 152.4 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" ""
+			(at 152.4 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7bd11fa-4884-4574-a785-b484680ff565")
+		)
+		(pin "2"
+			(uuid "98fcfb40-6b43-4959-b81b-dc10fde4a5e4")
+		)
+		(instances
+			(project "midi2cv"
+				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041"
+					(reference "D11")
 					(unit 1)
 				)
 			)
