@@ -9,10 +9,12 @@
  * - https://github.com/kassu/KassutronicsQuantizer
  *
  * Hardware based on:
- * - Standard MIDI IN and THRU
+ * - https://n-audio.net/designing-midi-in-and-midi-out-schematics/
+ * - https://github.com/dhaillant/midi8d
  * - https://github.com/kassu/kassutronics/tree/master/documentation/Quantizer
  * 
 */
+#define PITCH_CALIBRATION  // uncomment for calibration mode
 
 // Macros to set and clear a single bit in any register
 #ifndef cbi
@@ -28,7 +30,7 @@
 const uint8_t PIN_CLOCK = 8;
 const uint8_t PIN_CLOCK2 = 7;
 
-const uint8_t PIN_CC = 10;  // PWM pin
+const uint8_t PIN_CC = 10;    // PWM pin
 const uint8_t PIN_PITCH = 9;  // PWM pin
 const uint8_t PIN_GATE = A5;
 
@@ -42,10 +44,10 @@ const uint8_t PIN_EXP3 = 5;
 const uint8_t PIN_EXP5 = 11;
 const uint8_t PIN_EXP7 = 6;
 
-const uint8_t MIDI_CHANNEL = MIDI_CHANNEL_OMNI;
+const uint8_t MIDI_CHANNEL = MIDI_CHANNEL_OMNI; // Set midi channel here
 const uint8_t CC_NUMBER = 27;  // TODO: find a good default...
 
-// MIDI_CREATE_DEFAULT_INSTANCE();
+MIDI_CREATE_DEFAULT_INSTANCE();
 
 bool isRunning = false;
 uint8_t clockStep = 0;
@@ -57,35 +59,39 @@ void setup() {
 
   setupPWM();
 
-  // pinMode(PIN_GATE, OUTPUT);
-  // pinMode(PIN_CLOCK, OUTPUT);
-  // pinMode(PIN_CLOCK2, OUTPUT);
-  // digitalWrite(PIN_GATE, HIGH);
-  // digitalWrite(PIN_CLOCK, HIGH);
-  // digitalWrite(PIN_CLOCK2, HIGH);
+  pinMode(PIN_GATE, OUTPUT);
+  pinMode(PIN_CLOCK, OUTPUT);
+  pinMode(PIN_CLOCK2, OUTPUT);
+  digitalWrite(PIN_GATE, HIGH);
+  digitalWrite(PIN_CLOCK, HIGH);
+  digitalWrite(PIN_CLOCK2, HIGH);
 
-  // MIDI.setHandleClock(handleClock);        // called on each clock pulse
-  // MIDI.setHandleStart(handleStart);        // called on START message
-  // MIDI.setHandleContinue(handleContinue);  // called on CONTINUE message
-  // MIDI.setHandleStop(handleStop);          // called on STOP message
-  // MIDI.setHandleNoteOn(handleNoteOn);
-  // MIDI.setHandleNoteOff(handleNoteOff);
-  // MIDI.setHandleControlChange(handleCC);
+#ifndef PITCH_CALIBRATION
+  MIDI.setHandleClock(handleClock);        // called on each clock pulse
+  MIDI.setHandleStart(handleStart);        // called on START message
+  MIDI.setHandleContinue(handleContinue);  // called on CONTINUE message
+  MIDI.setHandleStop(handleStop);          // called on STOP message
+  MIDI.setHandleNoteOn(handleNoteOn);
+  MIDI.setHandleNoteOff(handleNoteOff);
+  MIDI.setHandleControlChange(handleCC);
 
-  // MIDI.begin(MIDI_CHANNEL);  // filter MIDI channel
+  MIDI.begin(MIDI_CHANNEL);  // filter MIDI channel
+#endif
 
   delay(1000);
   // Serial.println("Serial ready...");
 }
 
 void loop() {
-  // MIDI.read();
-  // Control the PWM duty cycle with analogWrite (0 to 127 for 7-bit resolution)
-  for (uint8_t i = 0; i < 128; i += 32) {
-    // analogWrite(PIN_PITCH, i);  // 7-bit resolution: values from 0 to 127
-    writePitch(i);
-    delay(100);                  // Small delay to visualize the change
-  }
+
+#if defined(PITCH_CALIBRATION)
+  writePitch(36);  // for unipolar output: 3V
+  delay(2000);
+  writePitch(84);  // for unipolar output: 7V
+  delay(2000);
+#else
+  MIDI.read();
+#endif
 }
 
 void handleStart() {
@@ -130,11 +136,19 @@ void handleClock() {
 }
 
 void handleNoteOn(midi::Channel channel, byte note, byte velocity) {
-  // convert note to pitch, pitch to frequency table index
-  uint8_t noteIndex = 0;  // noteIndexTable[note]; // TODO
+  // convert note V/Oct
+  // one step in the PWM output is one note, so only shift could be adjusted
+  // Pitch output needs hardware calibration
+  // C-2 is midi note 0
+  // C 3 is midi note 60
+  // C 8 is midi note 120
+  uint8_t noteIndex = note;
   writePitch(noteIndex);
-  // gate on
-  digitalWrite(PIN_GATE, HIGH);
+
+  // gate on unless velocity is 0
+  velocity == 0
+    ? digitalWrite(PIN_GATE, LOW)
+    : digitalWrite(PIN_GATE, HIGH);
 }
 
 void handleNoteOff(midi::Channel channel, byte note, byte velocity) {
