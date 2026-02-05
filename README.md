@@ -1,6 +1,8 @@
 # MIDI Interface
 
-MIDI to Clock, CV and Gate interface in Eurorack format based on the Arduino Nano v3.
+MIDI to Clock, CV and Gate interface in 4 hp wide Eurorack format based on the Arduino Nano v3.
+
+![Boards Image](Boards_midi2cv.png) "3d rendered image of the two boards"
 
 ## Functions
 
