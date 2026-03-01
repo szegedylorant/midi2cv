@@ -10,7 +10,7 @@ MIDI to Clock, CV and Gate interface in 4 hp wide Eurorack format based on the A
 * TRS MIDI Type A
 * Hardware MIDI Thru
 * MIDI clock to 16th note clock signal
-* MIDI clock to DYN SYNC 24ppqn signal
+* MIDI clock to DIN SYNC 24ppqn signal
 * MIDI CC using 7 bit PWM Output
 * 1V / Octave Pitch CV using 7 bit PWM Output
 * Note glide knob

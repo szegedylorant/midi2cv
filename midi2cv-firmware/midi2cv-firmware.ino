@@ -10,11 +10,12 @@
  *
  * Hardware based on:
  * - https://n-audio.net/designing-midi-in-and-midi-out-schematics/
+ * - https://electricdruid.net/product/midi-inoutthru-pcb/
  * - https://github.com/dhaillant/midi8d
  * - https://github.com/kassu/kassutronics/tree/master/documentation/Quantizer
  * 
 */
-#define PITCH_CALIBRATION  // uncomment for calibration mode
+// #define PITCH_CALIBRATION  // uncomment for calibration mode
 
 // Macros to set and clear a single bit in any register
 #ifndef cbi
@@ -23,6 +24,8 @@
 #ifndef sbi
 #define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit))
 #endif
+
+#define TRIGGER_LENGTH 1000  // clock and sync gate length in microseconds
 
 #include <Arduino.h>
 #include <MIDI.h>  // https://github.com/FortySevenEffects/arduino_midi_library.git
@@ -44,15 +47,53 @@ const uint8_t PIN_EXP3 = 5;
 const uint8_t PIN_EXP5 = 11;
 const uint8_t PIN_EXP7 = 6;
 
-const uint8_t MIDI_CHANNEL = MIDI_CHANNEL_OMNI; // Set midi channel here
-const uint8_t CC_NUMBER = 27;  // TODO: find a good default...
+const uint8_t MIDI_CHANNEL = MIDI_CHANNEL_OMNI;  // Set midi channel here
+const uint8_t CC_NUMBER = 27;                    // TODO: find a good default...
+
 
 MIDI_CREATE_DEFAULT_INSTANCE();
 
 bool isRunning = false;
-uint8_t clockStep = 0;
-uint16_t syncStep = 0;
 
+class Trigger {
+public:
+  uint8_t step = 0;
+  bool isTriggered = false;
+
+  Trigger(const uint8_t pin)
+    : PIN(pin) {}
+
+  void update() {
+    long now = micros();
+    if (isTriggered) {  // pick up trigger signal
+      triggerStart = now;
+      isTriggered = false;
+    }
+    if (now - triggerStart < TRIGGER_LENGTH) {  // keep pin high for the predefined duration
+      digitalWrite(PIN, HIGH);
+    } else {
+      digitalWrite(PIN, LOW);
+    }
+  }
+private:
+  const uint8_t PIN;
+  long triggerStart = 0;
+};
+
+Trigger clock(PIN_CLOCK2);
+Trigger sync(PIN_CLOCK);
+
+void startupBlinkLED() {
+  digitalWrite(PIN_GATE, LOW);
+  digitalWrite(PIN_CLOCK2, LOW);
+  delay(1000);
+  digitalWrite(PIN_GATE, HIGH);
+  delay(200);
+  digitalWrite(PIN_GATE, LOW);
+  digitalWrite(PIN_CLOCK2, HIGH);
+  delay(200);
+  digitalWrite(PIN_CLOCK2, LOW);
+}
 void setup() {
   // Serial.begin(115200);
   // Serial.begin(31250);
@@ -80,6 +121,7 @@ void setup() {
 
   delay(1000);
   // Serial.println("Serial ready...");
+  startupBlinkLED();
 }
 
 void loop() {
@@ -91,6 +133,8 @@ void loop() {
   delay(2000);
 #else
   MIDI.read();
+  clock.update();
+  sync.update();
 #endif
 }
 
@@ -98,8 +142,8 @@ void handleStart() {
   // Serial.println("Start");
 
   isRunning = true;
-  syncStep = 0;
-  clockStep = 0;
+  sync.step = 0;
+  clock.step = 0;
 }
 
 void handleContinue() {
@@ -117,21 +161,12 @@ void handleStop() {
 void handleClock() {
   // Serial.println("Tick");
   if (isRunning) {
-    if (clockStep == 0) {
-      digitalWrite(PIN_CLOCK2, HIGH);
-    } else {
-      digitalWrite(PIN_CLOCK2, LOW);
-    }
+    clock.isTriggered = (clock.step == 0);
+    sync.isTriggered = true;
 
-    if (syncStep == 0) {
-      digitalWrite(PIN_CLOCK, HIGH);
-    } else {
-      digitalWrite(PIN_CLOCK, LOW);
-    }
-
-    syncStep++;
-    syncStep = syncStep % 96;  // 24ppqn MIDI clock, directly suitable for DIN SYNC
-    clockStep = syncStep % 6;  // 16th notes
+    sync.step++;
+    sync.step = sync.step % 96;  // 24ppqn MIDI clock, directly suitable for DIN SYNC; fold at each bar to avoid overflow
+    clock.step = sync.step % 6;  // 16th notes; as a division of the midi clock
   }
 }
 
@@ -146,9 +181,11 @@ void handleNoteOn(midi::Channel channel, byte note, byte velocity) {
   writePitch(noteIndex);
 
   // gate on unless velocity is 0
-  velocity == 0
-    ? digitalWrite(PIN_GATE, LOW)
-    : digitalWrite(PIN_GATE, HIGH);
+  if (velocity == 0) {
+    digitalWrite(PIN_GATE, LOW);
+  } else {
+    digitalWrite(PIN_GATE, HIGH);
+  }
 }
 
 void handleNoteOff(midi::Channel channel, byte note, byte velocity) {

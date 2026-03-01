@@ -5,7 +5,7 @@
 	(uuid "7c575425-c876-4a21-873f-ca809358d7a8")
 	(paper "A4")
 	(title_block
-		(rev "3")
+		(rev "4")
 	)
 	(lib_symbols
 		(symbol "Connector_Audio:AudioJack3"
@@ -1008,6 +1008,217 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_BJT:Q_PNP_BEC"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_PNP_BEC"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "PNP transistor, base/emitter/collector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "PNP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=B 2=E 3=C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BJT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Q_PNP_BEC_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Q_PNP_BEC_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "TRS MIDI Type A"
 		(exclude_from_sim no)
@@ -1062,6 +1273,12 @@
 		(uuid "179353f4-041d-4c04-a7bf-64a441e634ce")
 	)
 	(junction
+		(at 77.47 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "439cd1d9-cf2a-4d39-a312-a491649a7f5d")
+	)
+	(junction
 		(at 86.36 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1072,6 +1289,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d04072c-970b-450a-abf8-a91a67b35299")
+	)
+	(junction
+		(at 69.85 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7535aad-472f-4852-9357-5e24b3282d01")
 	)
 	(junction
 		(at 107.95 50.8)
@@ -1111,7 +1334,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 144.78) (xy 77.47 137.16)
+			(xy 69.85 137.16) (xy 69.85 144.78)
 		)
 		(stroke
 			(width 0)
@@ -1151,7 +1374,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 132.08) (xy 60.96 132.08)
+			(xy 55.88 132.08) (xy 62.23 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1221,13 +1444,13 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 132.08) (xy 69.85 132.08)
+			(xy 69.85 118.11) (xy 69.85 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f25d0bf-7a57-4038-98bb-603cb1437db8")
+		(uuid "6acdd4bc-cde3-433f-ad2e-64698abbe97b")
 	)
 	(wire
 		(pts
@@ -1281,6 +1504,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 125.73) (xy 69.85 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9798533d-479c-422b-bb5b-0ebfcbe28eeb")
+	)
+	(wire
+		(pts
 			(xy 85.09 119.38) (xy 101.6 119.38)
 		)
 		(stroke
@@ -1288,6 +1521,16 @@
 			(type default)
 		)
 		(uuid "9e6a35da-4649-4ce6-a406-65ec3e9f89cc")
+	)
+	(wire
+		(pts
+			(xy 69.85 116.84) (xy 77.47 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a91458e0-3f59-48e7-8663-6d6ee6427a67")
 	)
 	(wire
 		(pts
@@ -1369,6 +1612,16 @@
 		)
 		(uuid "f373f895-1700-4276-a6a5-7e0f969f0e19")
 	)
+	(wire
+		(pts
+			(xy 69.85 127) (xy 77.47 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3eaa475-b592-4e2a-9529-93a490e526a3")
+	)
 	(global_label "B_GND"
 		(shape input)
 		(at 107.95 60.96 0)
@@ -1437,7 +1690,7 @@
 	)
 	(global_label "B_GND"
 		(shape input)
-		(at 77.47 144.78 0)
+		(at 69.85 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1447,7 +1700,7 @@
 		)
 		(uuid "3db11ffd-7213-451f-a9ae-afdcb4a12456")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.5633 144.78 0)
+			(at 78.9433 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2015,109 +2268,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MMBT5551L")
-		(at 74.93 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "420ecd69-a3ea-4562-9040-44753bac210a")
-		(property "Reference" "Q1"
-			(at 80.01 130.8099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMBT5551L"
-			(at 80.01 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 80.01 133.985 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
-			(at 74.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.6A Ic, 160V Vce, NPN Transistor, SOT-23"
-			(at 74.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 74.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 74.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2145"
-			(at 74.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "356b362f-d41d-4800-9118-c8466afbda0a")
-		)
-		(pin "3"
-			(uuid "3f83966b-e533-4944-8097-3b6e47fad99d")
-		)
-		(pin "2"
-			(uuid "02b48808-4501-45b0-8603-6311a753ec78")
-		)
-		(instances
-			(project ""
-				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041/957f6260-dd24-4429-8083-f8ea2da55485"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148WS")
 		(at 86.36 49.53 270)
 		(unit 1)
@@ -2304,6 +2454,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:Q_PNP_BEC")
+		(at 67.31 132.08 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92e620d9-c82b-4a18-bd42-15819e113ce8")
+		(property "Reference" "Q1"
+			(at 72.39 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBT5401"
+			(at 72.39 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 72.39 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PNP transistor, base/emitter/collector"
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C8326"
+			(at 67.31 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "42241d63-c4fa-4142-816c-292b7f05f152")
+		)
+		(pin "3"
+			(uuid "7a6ec426-a3ca-4fec-a2d4-5b8e11cf69cc")
+		)
+		(pin "1"
+			(uuid "b5bd2a15-c5eb-49db-82c8-a67798b19f4e")
+		)
+		(instances
+			(project ""
+				(path "/dc24635f-92c0-45e1-9dcb-753bde3bb041/957f6260-dd24-4429-8083-f8ea2da55485"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 76.2 45.72 90)
 		(unit 1)
@@ -2391,32 +2642,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 64.77 132.08 90)
+		(at 69.85 121.92 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b256d593-c5bf-4c46-82e1-f9d9d3fbbfae")
 		(property "Reference" "R19"
-			(at 64.77 125.73 90)
+			(at 67.31 120.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "1k"
-			(at 64.77 128.27 90)
+			(at 67.31 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 64.77 133.858 90)
+			(at 68.072 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2425,7 +2678,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 64.77 132.08 0)
+			(at 69.85 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2434,7 +2687,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 64.77 132.08 0)
+			(at 69.85 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2443,7 +2696,7 @@
 			)
 		)
 		(property "LCSC" "C21190"
-			(at 64.77 132.08 90)
+			(at 69.85 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2452,7 +2705,7 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" ""
-			(at 64.77 132.08 90)
+			(at 69.85 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)

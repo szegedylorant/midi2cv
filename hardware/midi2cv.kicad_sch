@@ -5,7 +5,7 @@
 	(uuid "dc24635f-92c0-45e1-9dcb-753bde3bb041")
 	(paper "A4")
 	(title_block
-		(rev "3")
+		(rev "4")
 	)
 	(lib_symbols
 		(symbol "Connector_Audio:AudioJack2_SwitchT"
