@@ -15,7 +15,7 @@
  * - https://github.com/kassu/kassutronics/tree/master/documentation/Quantizer
  * 
 */
-// #define PITCH_CALIBRATION  // uncomment for calibration mode
+// #define PITCH_CALIBRATION 5000  // uncomment for calibration mode
 
 // Macros to set and clear a single bit in any register
 #ifndef cbi
@@ -127,10 +127,12 @@ void setup() {
 void loop() {
 
 #if defined(PITCH_CALIBRATION)
-  writePitch(36);  // for unipolar output: 3V
-  delay(2000);
-  writePitch(84);  // for unipolar output: 7V
-  delay(2000);
+  writePitch(12);  // for unipolar output: 1V
+  delay(PITCH_CALIBRATION);
+  writePitch(60);  // for unipolar output: 5V
+  delay(PITCH_CALIBRATION);
+  writePitch(108);  // for unipolar output: 9V
+  delay(PITCH_CALIBRATION);
 #else
   MIDI.read();
   clock.update();
@@ -264,7 +266,7 @@ void setupPWM() {
 }
 
 inline void writePitch(uint8_t pitch) {
-  OCR1A = pitch;
+  OCR1A = pitch - 1; // TODO: fix offset adjustment range in hardware
 }
 
 inline void writeCC(uint8_t cc) {
